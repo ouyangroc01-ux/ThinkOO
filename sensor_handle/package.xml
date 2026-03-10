@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>sensor_handle</name>
+  <version>0.0.1</version>
+  <description>
+    Sensor handle package providing point cloud processing and sensor fusion.
+    Depends on PCL, OpenCV, Eigen3, and Ceres for core functionality.
+    GTSAM support is optional — if GTSAM is not installed the package is built
+    without GTSAM-based features.
+  </description>
+
+  <maintainer email="user@example.com">maintainer</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- ROS dependencies -->
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+
+  <!-- System dependencies -->
+  <build_depend>libpcl-dev</build_depend>
+  <build_depend>libopencv-dev</build_depend>
+  <build_depend>libeigen3-dev</build_depend>
+  <build_depend>libceres-dev</build_depend>
+
+  <!-- GTSAM is optional; uncomment and install libgtsam-dev to enable GTSAM features -->
+  <!-- <build_depend>libgtsam-dev</build_depend> -->
+
+  <exec_depend>libpcl-dev</exec_depend>
+  <exec_depend>libopencv-dev</exec_depend>
+</package>
